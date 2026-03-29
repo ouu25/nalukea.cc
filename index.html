@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nalukea</title>
+<link href="https://fonts.loli.net/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: #F8F9FA;
+  color: #212529;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+.logo { margin-bottom: 32px; }
+.logo svg { height: 36px; width: auto; }
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 48px;
+  letter-spacing: 0.5px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 640px;
+}
+.project-card {
+  background: #fff;
+  border: 1px solid #DEE2E6;
+  border-radius: 14px;
+  padding: 28px 24px;
+  width: 280px;
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+}
+.project-card:hover {
+  border-color: #4299E1;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+.pc-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #868E96;
+  margin-bottom: 8px;
+}
+.pc-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.pc-desc {
+  font-size: 13px;
+  color: #868E96;
+  line-height: 1.6;
+}
+footer {
+  margin-top: 64px;
+  font-size: 11px;
+  color: #ADB5BD;
+}
+</style>
+</head>
+<body>
+  <div class="logo">
+    <svg width="180" height="36" viewBox="0 0 230 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="w1" x1="0" y1="0" x2="42" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2B6CB0"/><stop offset="50%" stop-color="#3182CE"/><stop offset="100%" stop-color="#4299E1"/></linearGradient><linearGradient id="w2" x1="0" y1="0" x2="42" y2="36" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4299E1"/><stop offset="100%" stop-color="#90CDF4"/></linearGradient><linearGradient id="tg" x1="58" y1="0" x2="230" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2B6CB0"/><stop offset="35%" stop-color="#3182CE"/><stop offset="100%" stop-color="#4299E1"/></linearGradient></defs>
+      <path d="M2 21.6 C5.46 5.76,12.6 3.6,19.74 12.96 C26.46 21.6,33.6 18.72,39.06 11.52" stroke="url(#w1)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M2.94 28.8 C9.66 23.04,16.8 23.04,23.94 28.8 C29.4 33.12,36.54 30.24,39.06 25.92" stroke="url(#w2)" stroke-width="1.8" stroke-linecap="round" fill="none" opacity=".28"/>
+      <text x="58" y="30" font-family="'Fraunces',serif" font-weight="500" font-size="36" letter-spacing="1.5" fill="url(#tg)">Nalukea</text>
+    </svg>
+  </div>
+  <h1>Projects</h1>
+  <div class="projects">
+    <a href="/pathways/" class="project-card">
+      <div class="pc-label">Guide</div>
+      <div class="pc-title">海外升学路线规划</div>
+      <div class="pc-desc">中国高中毕业生的 11 条非高考升学路径全解析</div>
+    </a>
+    <!-- 以后可以继续添加其他项目卡片 -->
+  </div>
+  <footer>Nalukea · 2026</footer>
+</body>
+</html>
